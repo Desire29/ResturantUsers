@@ -1,0 +1,121 @@
+$primary: #251f44;
+$secondary: #d3dbff;
+$tertiary: #fe91ca;
+$black: #000;
+$dark: #505050;
+
+body{
+    background: #f8f8f8;
+}
+//navbar
+.navbar-brand{
+    img{
+        width: 80px;
+        height: auto;
+    }
+
+}
+nav{
+    padding: 0.5rem 7% !important;
+    background:$primary;
+    a{
+        color: #ffff;
+        }
+    .register{
+        border: 1px solid #fe91ca;
+        border-radius: 10px;
+    }
+
+}
+
+//carousel
+.carousel-item{
+    height: 70vh;
+        img{
+        filter: brightness(0.3);
+    }
+    .carousel-caption{
+        margin-bottom: 5rem;
+        padding-bottom: 60px;
+        h5{
+            font-size: 45px;
+            margin: 1rem auto;
+            width: fit-content;
+        }
+        p{
+            font-size: 24px;
+            margin:1rem auto;
+            width: fit-content;
+        }
+    }
+}
+
+//menu item
+.section{
+    padding: 1.5rem 7%;
+    h4{
+        padding: 0.5rem 2% !important;
+        font-size: 24px;
+        font-weight: bold;
+        color: $primary;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        .details{
+            padding: 2rem 1.5rem !important;
+            width: 32%;
+            height: auto;
+            border: none;
+            border-radius: 10px;
+            box-shadow:0px 4px 20px rgba(0, 0, 0, 0.1) !important;
+            p{
+                text-align: center;
+                color: $primary;
+            }
+
+            .set {
+                p:nth-of-type(odd){
+                    font-weight: 600;
+                    margin-top: 1rem;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+
+    }
+
+}
+//footer
+footer{
+    .card-footer{
+        padding: 20px;
+        font-weight: 600;
+        background: $secondary;
+        color:$primary;
+    }
+}
+
+
+
+@media screen and (max-width: 599px) {
+
+    .section{
+        padding: 1.5rem 7%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+    
+        .cards{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            }
+            .details{
+                width: 100%;
+                }
+
+}

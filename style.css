@@ -1,0 +1,127 @@
+body {
+  background: #f8f8f8;
+}
+
+.navbar-brand img {
+  width: 80px;
+  height: auto;
+}
+
+nav {
+  padding: 0.5rem 7% !important;
+  background: #251f44;
+}
+
+nav a {
+  color: #ffff;
+}
+
+nav .register {
+  border: 1px solid #fe91ca;
+  border-radius: 10px;
+}
+
+.carousel-item {
+  height: 70vh;
+}
+
+.carousel-item img {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+
+.carousel-item .carousel-caption {
+  margin-bottom: 5rem;
+  padding-bottom: 60px;
+}
+
+.carousel-item .carousel-caption h5 {
+  font-size: 45px;
+  margin: 1rem auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.carousel-item .carousel-caption p {
+  font-size: 24px;
+  margin: 1rem auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.section {
+  padding: 1.5rem 7%;
+}
+
+.section h4 {
+  padding: 0.5rem 2% !important;
+  font-size: 24px;
+  font-weight: bold;
+  color: #251f44;
+}
+
+.section .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section .cards .details {
+  padding: 2rem 1.5rem !important;
+  width: 32%;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1) !important;
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.section .cards .details p {
+  text-align: center;
+  color: #251f44;
+}
+
+.section .cards .details .set p:nth-of-type(odd) {
+  font-weight: 600;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+footer .card-footer {
+  padding: 20px;
+  font-weight: 600;
+  background: #d3dbff;
+  color: #251f44;
+}
+
+@media screen and (max-width: 599px) {
+  .section {
+    padding: 1.5rem 7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .details {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
