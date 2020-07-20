@@ -10,9 +10,9 @@
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
     crossorigin="anonymous">
 </head>
-<body>
+<body onload="cartCount()">
     <div class="bg-success text-white p-4 alert_box" id="alert">
-        <i class="icofont-info-circle text-white mr-2"></i> <span id="item"></span> has been successfully added to cart
+        <i class="icofont-info-circle text-white mr-2"></i> <span id="item"></span>
     </div>
     <nav class="navbar sticky-top navbar-expand-lg">
         <a class="navbar-brand" href="index.html">
@@ -31,7 +31,9 @@
             </li>
             <li class="nav-item" onclick="viewCart()"
              data-toggle="modal" data-target="#exampleModal">
-                <a class="nav-link text-white" >Cart</a>
+                <a class="nav-link text-white" >Cart
+                  <span class="badge badge-pink" id="count">0</span>
+                </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
@@ -60,36 +62,21 @@
                     <th scope="col">Amount</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Lunch pack Regular</td>
-                    <td>2</td>
-                    <td>1000</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Lunch Pack Regular</td>
-                    <td>1</td>
-                    <td>1200</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Lunch pack Jumbo</td>
-                    <td>4</td>
-                    <td>500</td>
-                  </tr>
-                  <tr>
+                <tbody id="table">
+                  
+                  <!-- <tr>
                     <td></td>
                     <td colspan="2">Total</td>
                     <td>5400</td>
-                  </tr>
+                  </tr> -->
                 </tbody>
               </table>
         </div>
+        <div class="text-center my-2 text-danger" style="cursor: pointer;"
+        onclick="empty()" data-dismiss="modal">Empty Cart</div>
         <div class="modal-footer d-flex justify-content-center mr-2">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Checkout</button>
+          <button type="button" class="btn btn-success" onclick="submit()">Place Order</button>
         </div>
       </div>
     </div>

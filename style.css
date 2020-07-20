@@ -2,11 +2,16 @@ body {
   background: #f8f8f8;
 }
 
+.badge-pink {
+  background: #fe91ca;
+  color: #251f44;
+}
+
 .alert_box {
   position: fixed;
   z-index: 99999;
   display: none;
-  top: 2rem;
+  top: 3.2rem;
   right: 0;
 }
 
@@ -110,6 +115,11 @@ nav li {
   font-weight: 600;
   margin-top: 1rem;
   text-transform: capitalize;
+}
+
+.section .cards .details .set .btn-success {
+  background: #fe91ca !important;
+  border: none !important;
 }
 
 footer .card-footer {

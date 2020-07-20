@@ -7,11 +7,15 @@ $dark: #505050;
 body{
     background: #f8f8f8;
 }
+.badge-pink{
+    background: $tertiary;
+    color: $primary;
+}
 .alert_box{
     position: fixed;
     z-index: 99999;
     display: none;
-    top: 2rem;
+    top: 3.2rem;
     right: 0;
 }
 .hide{
@@ -96,6 +100,10 @@ nav{
                     font-weight: 600;
                     margin-top: 1rem;
                     text-transform: capitalize;
+                }
+                .btn-success{
+                    background: $tertiary !important;
+                    border: none !important;
                 }
             }
         }
