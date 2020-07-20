@@ -2,6 +2,22 @@ body {
   background: #f8f8f8;
 }
 
+.alert_box {
+  position: fixed;
+  z-index: 99999;
+  display: none;
+  top: 2rem;
+  right: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 .navbar-brand img {
   width: 80px;
   height: auto;

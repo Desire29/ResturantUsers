@@ -7,6 +7,19 @@ $dark: #505050;
 body{
     background: #f8f8f8;
 }
+.alert_box{
+    position: fixed;
+    z-index: 99999;
+    display: none;
+    top: 2rem;
+    right: 0;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block !important;
+}
 //navbar
 .navbar-brand{
     img{
@@ -113,9 +126,9 @@ footer{
             display: flex;
             justify-content: space-between;
             width: 100%;
-            }
-            .details{
-                width: 100%;
-                }
+        }
+        .details{
+            width: 100%;
+        }
 
 }
