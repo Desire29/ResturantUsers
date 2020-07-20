@@ -56,5 +56,4 @@ function addCart(e){
 }
 function viewCart(){
     let existingOrder = JSON.parse(localStorage.getItem('order'));
-    console.log(existingOrder);
 }

@@ -37,6 +37,10 @@ nav .register {
   border-radius: 10px;
 }
 
+nav li {
+  cursor: pointer;
+}
+
 .carousel-item {
   height: 70vh;
 }
