@@ -124,22 +124,17 @@ footer{
 
 
 
-@media screen and (max-width: 599px) {
-
-    .section{
-        padding: 1.5rem 7%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        }
-    
+@media screen and (max-width: 599px) {  
+    .section{  
         .cards{
             display: flex;
             justify-content: space-between;
-            width: 100%;
+            flex-wrap: wrap;
+            .details{
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
         }
-        .details{
-            width: 100%;
-        }
+    }   
 
 }

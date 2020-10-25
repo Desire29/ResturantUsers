@@ -130,8 +130,7 @@ footer .card-footer {
 }
 
 @media screen and (max-width: 599px) {
-  .section {
-    padding: 1.5rem 7%;
+  .section .cards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -141,17 +140,9 @@ footer .card-footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .cards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  .section .cards .details {
     width: 100%;
-  }
-  .details {
-    width: 100%;
+    margin-bottom: 1.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
